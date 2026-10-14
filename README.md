@@ -72,15 +72,13 @@ If you prefer the terminal, ensure you have Java 17+ and Apache Maven installed 
 ## 🔑 Default Login Credentials
 
 Use the following test credentials to log in and explore the application. 
-**The password for all accounts is: `password`**
 
-| Role | Email | Name |
+| Role | Email | Password |
 | :--- | :--- | :--- |
-| **Admin** | `admin@quizora.dev` | Admin User |
-| **Quiz Creator** | `meera@quizora.dev` | Meera Shah |
-| **Participant** | `arjun@quizora.dev` | Arjun Kumar |
-| **Participant** | `rahul@quizora.dev` | Rahul Verma |
-| **Participant** | `nisha@quizora.dev` | Nisha Patel |
+| **Admin** | `admin@quizora.dev` | admin123 |
+| **Quiz Creator** | `yasir@creator.com` | 12345|
+| **Participant** | `yasir@learner.com` | 12345 |
+
 
 ---
 
@@ -93,13 +91,6 @@ Quizora uses **SQLite** through JDBC.
 
 ---
 
-## 📝 Assignment Rubric Mapping
 
-This project was built to satisfy specific academic criteria:
-
-- **Problem Understanding & Solution Design (8/8):** Implements a comprehensive multi-role system. Workflows are clearly defined for participants to take quizzes, creators to make them, and admins to moderate. Features dynamic searching, dynamic scoring, and global leaderboards.
-- **Core Java Concepts (10/10):** Utilizes modern Java 17 features including Records/Data Classes (via `final` classes), Collections (`List`, `Map`, `LinkedHashMap`), the Streams API (`.stream()`, `filter`, `map`), switch expressions, try-with-resources for resource management, exception handling, and multi-line text blocks for HTML generation.
-- **Database Integration / JDBC (8/8):** Fully integrates SQLite via JDBC. Uses `DriverManager` for connections, implements proper relational schema with `FOREIGN KEY` constraints, utilizes `PreparedStatement` for secure data insertion, employs batch processing (`executeBatch()`), and handles manual transaction commits (`setAutoCommit(false)`).
-- **Servlets & Web Integration (7/7):** Extends Jakarta `HttpServlet`, overrides `doGet` and `doPost`, extracts form parameters securely, manages authentication state via `HttpSession`, dynamically renders HTML/CSS responses, and implements an embedded Tomcat server setup within the application's `main` method.
 
 *The application has been successfully compiled and comprehensively tested. All workflows, edge cases, and database persistence functions work perfectly according to the rubric requirements.*
